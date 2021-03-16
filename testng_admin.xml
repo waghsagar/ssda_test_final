@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SSDA Automation Admin Tests" >
+
+<listeners>
+<listener class-name="ssda_test.Listeners"/>
+</listeners>
+
+	<test name="Validating Admin user Login page test">
+		<classes>
+			<class name="ssda_test.admin.TC01_AdminLoginTest"/>
+		</classes>
+	</test>
+	
+	<test name="Validating search filters present on Admin Orders tab test">
+		<classes>
+			<class name="ssda_test.admin.TC02_AdminOrdersTabFiltersValidationTest"/>
+		</classes>
+	</test>
+	
+	<test name="Validating Ready Orders displayed on dashboard tab">
+		<classes>
+			<class name="ssda_test.admin.TC03_AdminDashboardReadyOrderDetailsValidationTest"/>
+		</classes>
+	</test>
+	
+	<test name="Validating Pending Orders displayed on dashboard tab">
+		<classes>
+			<class name="ssda_test.admin.TC04_AdminDashboardPendingOrderDetailsValidationTest"/>
+		</classes>
+	</test>
+	
+	<test name="Validating Completed Orders displayed on dashboard tab">
+		<classes>
+			<class name="ssda_test.admin.TC05_AdminDashboardCompletedOrderDetailsValidationTest"/>
+		</classes>
+	</test>
+	
+	<test name="Validating Lapsed Orders displayed on dashboard tab">
+		<classes>
+			<class name="ssda_test.admin.TC06_AdminDashboardLapsedOrderDetailsValidationTest"/>
+		</classes>
+	</test>
+	
+	<test name="Validating Cancelled Orders displayed on dashboard tab">
+		<classes>
+			<class name="ssda_test.admin.TC07_AdminDashboardCancelledOrderDetailsValidationTest"/>
+		</classes>
+	</test>
+	
+	<test name="Validating Pending Order details window on admin Orders tab">
+		<classes>
+			<class name="ssda_test.admin.TC08_PendingOrderDetailsWindowValidationOnAdminOrdersTab"/>
+		</classes>
+	</test>
+	
+	<test name="Validating Ready Order details window on admin Orders tab">
+		<classes>
+			<class name="ssda_test.admin.TC09_ReadyOrderDetailsWindowValidationOnAdminOrdersTab"/>
+		</classes>
+	</test>
+	
+	<test name="Validating Completed Order details window on admin Orders tab">
+		<classes>
+			<class name="ssda_test.admin.TC10_CompletedOrderDetailsWindowValidationOnAdminOrdersTab"/>
+		</classes>
+	</test>
+	
+	<test name="Validating Lapsed Order details window on admin Orders tab">
+		<classes>
+			<class name="ssda_test.admin.TC11_LapsedOrderDetailsWindowValidationOnAdminOrdersTab"/>
+		</classes>
+	</test>
+	
+	<test name="Validating Cancelled Order details window on admin Orders tab">
+		<classes>
+			<class name="ssda_test.admin.TC12_CancelledOrderDetailsWindowValidationOnAdminOrdersTab"/>
+		</classes>
+	</test>
+	
+</suite>

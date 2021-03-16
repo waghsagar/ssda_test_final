@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SSDA Automation AllTests Suite">
+
+<listeners>
+<listener class-name="ssda_test.Listeners"/>
+</listeners>
+
+	<suite-files>
+		<suite-file path="testng_customer.xml" />
+		<suite-file path="testng_admin.xml" />
+		<suite-file path="testng_aggr.xml" />
+	</suite-files>
+
+</suite> <!-- Suite -->
